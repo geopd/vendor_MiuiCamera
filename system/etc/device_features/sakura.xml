@@ -20,6 +20,8 @@
     <bool name="support_dual_sim_card">true</bool>
     <!--whether the device has dual systems-->
     <bool name="is_dual_system">false</bool>
+    <!--whether the device is emulated sdcard-->
+    <bool name="is_emulated_sdcard">true</bool>
     <!--whether the device has dual sd card-->
     <bool name="support_dual_sd_card">true</bool>
     <!--whether the device supports bt debug trace-->
@@ -79,7 +81,7 @@
     <!--whether the device supports eap sim-->
     <bool name="support_eap_sim">true</bool>
     <!--whether the device supports screen optimize-->
-    <bool name="support_screen_optimize">false</bool>
+    <bool name="support_screen_optimize">true</bool>
     <!--whether the device supports agps-->
     <bool name="support_agps">true</bool>
     <!-- Support Android Flashlight Controller -->
@@ -141,9 +143,9 @@
     <!--whether support full size panorama in camera-->
     <bool name="support_full_size_panorama">false</bool>
     <!--whether taking lower size effect image in camera-->
-    <bool name="is_lower_size_effect">false</bool>
+    <bool name="is_lower_size_effect">true</bool>
     <!--whether taking full size effect image in camera-->
-    <bool name="is_full_size_effect">false</bool>
+    <bool name="is_full_size_effect">true</bool>
     <!--whether support aohdr in camera-->
     <bool name="support_camera_aohdr">false</bool>
     <!--whether support high frame recording in camera-->
@@ -173,7 +175,7 @@
     <!--whether set orientation info for face detection in camera-->
     <bool name="is_camera_face_detection_need_orientation">true</bool>
     <!--whether hold blured background for effects preview in camera-->
-    <bool name="is_camera_hold_blur_background">true</bool>
+    <bool name="is_camera_hold_blur_background">false</bool>
     <!--whether support peaking mf in camera-->
     <bool name="support_camera_peaking_mf">false</bool>
     <!--whether support pause in hfr recording-->
@@ -219,7 +221,7 @@
     <!--release time for the device, should be an unix timestamp-->
     <string name="release_time">1473868800000</string>
     <!--0:not support 1:close gamut 2:close ce-->
-    <integer name="screen_standard_mode">2</integer>
+    <integer name="screen_standard_mode">1</integer>
     <!--the max level for paper mode -->
     <float name="paper_mode_max_level">32.0</float>
     <!--Flag of reduce preview size in camera(1:reduce, 0:do not reduce; 1st byte:rear camera, 2nd byte:front camera, 3rd byte:rear video, 4th byte:front video )-->
@@ -271,6 +273,8 @@
         <item>uinput-goodix</item>
     </string-array>
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
+    <!-- finger for alipay. default do not need config. -->
+    <string name="finger_alipay_ifaa_model">Xiaomi-sakura</string>
     <!-- type of soter finger pay, config by owner of soter -->
     <integer name="type_soter_finger_pay">2</integer>
     <!--wheater the device supports persist screen color in driver-->
